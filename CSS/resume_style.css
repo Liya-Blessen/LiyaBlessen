@@ -85,7 +85,8 @@ nav li a.active{
 }
 #profile-pic{
     width:40%;
-    height:100%;
+    /* height:100%; */
+    height: auto;
 }
 #welcome_quote{
     width:60%;
@@ -167,7 +168,8 @@ nav li a.active{
 #aboutPic{
     margin:5rem auto;
     width:40%;
-    height:90%;
+    /* height:90%; */
+    height: auto;
     border-radius: .5rem;
     box-shadow: .1rem .1rem 2rem .15rem #a7ff83;
 }
@@ -400,7 +402,7 @@ nav li a.active{
   /* Style the back side */
   .flip-card-back {
     background-color: white;
-    color: #4ef037;
+    color: black;
     transform: rotateY(180deg);
   }
   #main-project .flip-card-front{
@@ -519,8 +521,8 @@ footer .sub-heading{
 /* media queries */
 @media(max-width:1300px){
     #Education{
-        height: 100%;
-        margin-bottom: 10%;
+        /* height: 100%; */
+        /* margin-bottom: 10%; */
     }
     #education-content{
         padding:5rem;
@@ -529,13 +531,43 @@ footer .sub-heading{
 
 @media(max-width:998px){
     html{
-        font-size: 55%;
+        font-size: 55%;              
     }
     .flip-card{
         width:50%;
         margin:2rem;
         margin-bottom: 5rem;
     }
+    footer{
+        height:43rem;
+    }
+    /* style for menu icon */
+    .checkbtn{
+        display: block;
+      }
+      ul{
+        position: fixed;
+        width: 55%;
+        height: auto;
+        background-color: #4ef037;
+        border: .2rem solid #4ef037;
+        box-shadow: .1rem .1rem .5rem .1rem #4ef037;
+        top: 8rem;
+        right:-100%;
+        text-align: center;
+        padding:0;
+      }
+      nav li a{
+          color:white;
+      }
+      nav ul li{
+        display: block;
+        margin: 8.5% 0;
+        border-bottom: .1rem solid white;
+      }
+      #check:checked ~ ul{
+          right:0;
+      }
 }
 @media(max-width:760px){
     html{
@@ -550,6 +582,7 @@ footer .sub-heading{
         
     }
     #Education{
+        /* background-color: blue; */
         margin-top:17%;    
         height:90%;
     }
@@ -597,7 +630,7 @@ footer .sub-heading{
         margin-top: 100%;
     }
 }
-@media (max-width: 858px){
+/* @media (max-width: 858px){
     .checkbtn{
       display: block;
     }
@@ -624,4 +657,4 @@ footer .sub-heading{
     #check:checked ~ ul{
         right:0;
     }
-}
+} */
